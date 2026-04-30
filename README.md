@@ -64,7 +64,7 @@ git clone https://github.com/surendharsundar793-prog/Surendhar-Portfolio.git
 ```
 ### 2️⃣ Navigate to project folder
 ```bash
-### cd Surendhar-Portfolio
+cd Surendhar-Portfolio
 ```
 ### 3️⃣ Install dependencies
 ```bash
