@@ -50,14 +50,16 @@ It demonstrates my ability to build modern web applications using industry-relev
 
 ---
 
-## 📂 Project Structure  
+## 📂 Project Structure
+```bash
 portfolio/
-│── public/
-│── src/
-│ ├── components/
-│ ├── assets/
-│── package.json
-│── README.md
+├── public/
+├── src/
+│   ├── components/
+│   ├── assets/
+├── package.json
+├── README.md
+```
 
 ---
 
