@@ -49,8 +49,8 @@ portfolio/
 Clone the repository
 git clone https://github.com/surendharsundar793-prog/Surendhar-Portfolio.git
 Navigate to project folder
-cd your-repo-name
+cd Surendhar-Portfolio
 Install dependencies
 npm install
 Run the project
-npm start
+npm run dev
