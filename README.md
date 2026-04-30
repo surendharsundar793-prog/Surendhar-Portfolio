@@ -66,11 +66,22 @@ portfolio/
 ### 1️⃣ Clone the repository  
 ```bash
 git clone https://github.com/surendharsundar793-prog/Surendhar-Portfolio.git
-2️⃣ Navigate to project folder
-cd Surendhar-Portfolio
-3️⃣ Install dependencies
+```
+### 2️⃣ Navigate to project folder
+```bash
+### cd Surendhar-Portfolio
+```
+```bash
+### 3️⃣ Install dependencies
+```
+```bash
 npm install
-4️⃣ Run the project
+```
+### 4️⃣ Run the project
+```bash
 npm run dev
-5️⃣ Open in browser
+```
+### 5️⃣ Open in browser
+```bash
 http://localhost:5173
+```
