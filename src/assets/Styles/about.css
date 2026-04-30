@@ -160,6 +160,14 @@
   opacity: 0.8;
 }
 
+@media (max-width: 1024px) {
+  .about-section {
+    min-height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
 @media (max-width: 950px) {
   .about-content-split {
     grid-template-columns: 1fr;

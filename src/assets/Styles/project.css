@@ -170,6 +170,11 @@
 }
 
 @media (max-width: 1024px) {
+  .project-section {
+    min-height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
   .bento-terminal-grid {
     grid-template-columns: repeat(2, 1fr);
   }

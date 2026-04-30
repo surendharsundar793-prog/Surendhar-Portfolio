@@ -173,6 +173,11 @@
 .stat-row span:last-child { color: #fff; }
 
 @media (max-width: 1024px) {
+  .home-terminal-section {
+    min-height: auto;
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
   .home-terminal-container {
     grid-template-columns: 1fr;
     gap: 60px;
