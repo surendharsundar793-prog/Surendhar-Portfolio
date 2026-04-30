@@ -16,28 +16,21 @@ It demonstrates my ability to build modern web applications using industry-relev
 
 ---
 
-## 🛠️ Tech Stack  
-
-### 👨‍💻 Frontend  
-- HTML5  
-- CSS3  
-- JavaScript  
-- React.js  
-
-### ⚙️ Backend  
-- Java  
-- Spring Boot  
-
-### 🗄️ Database  
-- Oracle SQL  
-
-### 🚀 DevOps & Tools  
-- Docker  
-- Kubernetes  
-- Jenkins  
-- AWS  
-- Linux  
-- Git & GitHub  
+### 🛠️ Tech Stack
+### 👨‍💻 Core & Build Tools
+   - React.js
+   - Vite
+### 🎨 Styling
+   - Custom CSS (Vanilla CSS)
+### 🔀 Routing & Navigation
+   - React Router DOM
+### 🎬 Animations & Effects
+   - Framer Motion
+   - GSAP (ScrollTrigger)
+   - Lenis (Smooth Scrolling)
+### 🧩 UI & Utilities
+   - Lucide React (Icons)
+   - React Toastify (Notifications)
 
 ---
 
@@ -71,7 +64,7 @@ git clone https://github.com/surendharsundar793-prog/Surendhar-Portfolio.git
 ```
 ### 2️⃣ Navigate to project folder
 ```bash
-### cd Surendhar-Portfolio
+cd Surendhar-Portfolio
 ```
 ### 3️⃣ Install dependencies
 ```bash
