@@ -47,7 +47,7 @@ portfolio/
 
 ⚙️ Installation & Setup
 Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/surendharsundar793-prog/Surendhar-Portfolio.git
 Navigate to project folder
 cd your-repo-name
 Install dependencies
