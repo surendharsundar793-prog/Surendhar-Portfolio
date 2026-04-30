@@ -71,9 +71,7 @@ git clone https://github.com/surendharsundar793-prog/Surendhar-Portfolio.git
 ```bash
 ### cd Surendhar-Portfolio
 ```
-```bash
 ### 3️⃣ Install dependencies
-```
 ```bash
 npm install
 ```
