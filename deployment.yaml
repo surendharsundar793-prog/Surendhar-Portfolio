@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deploy1
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: demo
+  template:
+    metadata:
+      name: pod1
+      labels:
+        app: demo
+    spec:
+      containers:
+        - name: con1
+          image: surendharr/static01:v1
+          ports:
+            - containerPort: 80
