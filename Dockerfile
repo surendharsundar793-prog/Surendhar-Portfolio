@@ -1,12 +1,13 @@
 FROM node:20-alpine AS build
 WORKDIR /app
 
-COPY package*.json ./
-
-# 👇 IMPORTANT FIX
-RUN npm install --include=dev
-
+# Copy everything first
 COPY . .
+
+# Clean install (important)
+RUN npm ci
+
+# Build
 RUN npm run build
 
 FROM nginx:alpine
