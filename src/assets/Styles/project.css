@@ -1,0 +1,301 @@
+.project-section {
+  padding: 12vh 5%;
+  background-color: var(--bg-primary);
+  min-height: auto;
+  position: relative;
+}
+
+.project-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.project-header {
+  margin-bottom: 6vh;
+}
+
+.project-subtitle {
+  font-family: var(--font-heading);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 2px;
+  display: block;
+}
+
+.project-main-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.5vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.25;
+  color: #ffffff;
+  margin: 15px 0 0;
+  letter-spacing: -0.5px;
+}
+
+.bento-terminal-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.terminal-window {
+  background: rgba(22, 27, 34, 0.45);
+
+  border: 1px solid rgba(86, 211, 100, 0.12);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 100%;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.4s ease, 
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35), 
+              inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.terminal-window:hover {
+  border-color: rgba(86, 211, 100, 0.4);
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6), 
+              0 0 20px rgba(86, 211, 100, 0.1),
+              inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.window-topbar {
+  background: rgba(30, 41, 59, 0.3);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(86, 211, 100, 0.08);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.window-controls {
+  display: flex;
+  align-items: center;
+  width: 36px;
+  height: 8px;
+}
+
+.window-controls::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ff5f56;
+  box-shadow: 10px 0 0 #ffbd2e, 20px 0 0 #27c93f;
+  display: inline-block;
+}
+
+.window-title {
+  font-family: var(--font-heading);
+  font-size: 10px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 1px;
+}
+
+.window-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-preview-area {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #050505;
+  border-bottom: 1px solid rgba(86, 211, 100, 0.06);
+}
+
+.bento-image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: top !important;
+  opacity: 1;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.terminal-window:hover .bento-image {
+  transform: scale(1.03);
+}
+
+.project-meta-area {
+  padding: 24px;
+  background: rgba(13, 17, 23, 0.2);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-category-badge {
+  font-family: var(--font-heading);
+  font-size: 9px;
+  font-weight: 600;
+  color: var(--accent);
+  background: rgba(86, 211, 100, 0.05);
+  padding: 4px 10px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 14px;
+  border: 1px solid rgba(86, 211, 100, 0.2);
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.bento-project-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+  letter-spacing: -0.2px;
+}
+
+.bento-desc {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  opacity: 0.85;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 24px;
+  margin-top: auto; 
+}
+
+.project-tag-chip {
+  font-family: var(--font-heading);
+  font-size: 8.5px;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 3px 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.terminal-window:hover .project-tag-chip {
+  border-color: rgba(86, 211, 100, 0.15);
+  color: var(--text-primary);
+}
+
+.bento-links {
+  display: flex;
+  gap: 15px;
+}
+
+.bento-link {
+  font-family: var(--font-heading);
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: rgba(86, 211, 100, 0.04);
+  border: 1px solid rgba(86, 211, 100, 0.2);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.bento-link:hover {
+  background: rgba(86, 211, 100, 0.1);
+  border-color: var(--accent);
+  text-decoration: none;
+  transform: translateX(3px);
+  box-shadow: 0 0 10px rgba(86, 211, 100, 0.08);
+}
+
+@media (max-width: 1024px) {
+  .project-section {
+    min-height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .bento-terminal-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+.mobile-details-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .bento-terminal-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .mobile-details-toggle {
+    display: inline-flex;
+    background: transparent;
+    border: none;
+    color: var(--accent);
+    font-family: var(--font-heading);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 0;
+    margin-bottom: 15px;
+    cursor: pointer;
+    width: fit-content;
+    transition: color 0.3s ease;
+  }
+
+  .mobile-details-toggle:hover {
+    color: #ffffff;
+  }
+
+  .bento-desc.collapsed {
+    overflow: hidden;
+    display: -webkit-box;
+    /* -webkit-line-clamp: 2; */
+    -webkit-box-orient: vertical;
+    margin-bottom: 10px;
+  }
+
+  .bento-desc.expanded {
+    display: block;
+    /* -webkit-line-clamp: none; */
+    margin-bottom: 15px;
+  }
+
+  .project-tags.collapsed,
+  .bento-links.collapsed {
+    display: none !important;
+  }
+
+  .project-tags.expanded {
+    display: flex !important;
+    margin-bottom: 20px;
+  }
+
+  .bento-links.expanded {
+    display: flex !important;
+  }
+}
